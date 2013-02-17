@@ -1,9 +1,3 @@
-simuladorsemaforos
-==================
-
-Pequeno simulador de semáforos entre duas ruas
-
-
 -Programa que simula o tráfego de veículos por um semáforo entre duas ruas que se cruzam e tem direção única
 -criado em: jan/2013
 -autor: Rogério de Paula Aguilar - rogeriodpaguilarbr@gmail.com
@@ -19,9 +13,9 @@ Pequeno simulador de semáforos entre duas ruas
 
 -os arquivos fontes estão com a codificação utf-8
 -os fontes deste projeto estão em:
-         https://github.com/rogeriopaguilar/simuladorsemaforos
+         https://github.com/rogeriopaguilar/Projetos/simuladorsemaforos
 
--criei o programa no Netbeans 7
+-criei o programa no Netbeans 6.9
 -necessário utilizar o jdk 1.7 ou superior
 
 

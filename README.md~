@@ -19,9 +19,9 @@ Pequeno simulador de semáforos entre duas ruas
 
 -os arquivos fontes estão com a codificação utf-8
 -os fontes deste projeto estão em:
-         https://github.com/rogeriopaguilar/simuladorsemaforos
+         https://github.com/rogeriopaguilar/Projetos/simuladorsemaforos
 
--criei o programa no Netbeans 7
+-criei o programa no Netbeans 6.9
 -necessário utilizar o jdk 1.7 ou superior
 
 
