@@ -29,7 +29,7 @@ public class JanelaSobre extends JPanel
      this.jLabel1 = new JLabel();
      setLayout(this.layoutMain);
      setBorder(this.border);
-     this.Tail.setText("Simulador de semáforos 0.1 - 2013 - Rogério de Paula Aguilar");
+     this.Tail.setText("Simulador de semáforos 0.2 - 2013 - Rogério de Paula Aguilar");
      this.jLabel1.setText("rogeriodpaguilarbr@gmail.com");
      add(this.Tail, new GridBagConstraints(0, 0, 1, 1, 0.0D, 0.0D, 17, 0, new Insets(5, 15, 0, 15), 0, 0));
      add(this.jLabel1, new GridBagConstraints(0, 1, 1, 1, 0.0D, 0.0D, 10, 0, new Insets(0, 0, 0, 0), 0, 0));
