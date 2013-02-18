@@ -291,5 +291,9 @@ public class Rua extends ElementoSimulacao implements ListenerMudancaSemaforo{
             listeners.remove(listener);
         }
 
+        
+        public void clearCarros(){
+            this.listaCarros.clear();
+        }
 	
 }

@@ -167,6 +167,7 @@ public class PainelConfiguracaoSub extends PainelConfiguracao implements Listene
 
             if(modeloTabelaCarroPistaCimaBaixo.getRowCount() == 0 && modeloTabelaCarroPistaEsquerdaDireita.getRowCount() == 0) {
                 simulador.pararSimulacao();
+                System.out.println("mensagem simulação encerrada!");
                 JOptionPane.showMessageDialog(PainelConfiguracaoSub.this, "Simulação Finalizada", "Mensagem", JOptionPane.INFORMATION_MESSAGE);
                 cmdComecar.setActionCommand("comecar");
                 cmdComecar.setText("Começar");
@@ -224,6 +225,7 @@ public class PainelConfiguracaoSub extends PainelConfiguracao implements Listene
                             JOptionPane.showMessageDialog(PainelConfiguracaoSub.this, "Selecione uma rua!", "Erro", JOptionPane.WARNING_MESSAGE);
                         } else {
                             if(simulador.isExecutandoSimulacao()) {
+                                System.out.println("Adicionando carro à simulação!");
                                 if(adicionarRuaEsquerdaDireita) {
                                     simulador.adicionarCarroSimulacaoCorrente(Rua.Direcao.ESQUERDA_PARA_DIREITA, carroEsquerdaDireita);
                                 }

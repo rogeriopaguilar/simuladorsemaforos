@@ -168,10 +168,13 @@ public class SimuladorSemaforos extends JFrame {
                     ElementoSimulacao elem = it.next();
                     if(elem instanceof Carro) {
                         it.remove();
+                        System.out.println("pararSimulacao - Removendo carro...");
                     } 
                 }
 
-		
+		ruaEsquerdaDireita.clearCarros();
+                ruaCimaBaixo.clearCarros();
+                
 		if(configuracao != null) {
 			configuracao.limpar();
 			configuracao = null;
@@ -371,13 +374,16 @@ public class SimuladorSemaforos extends JFrame {
 
     public void adicionarCarroSimulacaoCorrente(Rua.Direcao direcao, Carro carro) {
         if(isExecutandoSimulacao() && configuracao != null) {
+            System.out.println("adicionarCarroSimulacaoCorrente");
             if(Rua.Direcao.ESQUERDA_PARA_DIREITA.equals(direcao)) {
+                System.out.println("adicionarCarroSimulacaoCorrente - ESQUERDA - qtde carros atual --> " + ruaEsquerdaDireita.getQtdeCarros());
                 configuracao.adicionarCarroPistaEsquerdaDireita(carro);
                 if(ruaEsquerdaDireita.getQtdeCarros() == 0) {
                     simularProximoCarroRuaEsquerdaDireita();
                 }
 
             } else {
+                System.out.println("adicionarCarroSimulacaoCorrente - CIMA");
                 configuracao.adicionarCarroPistaCimaBaixo(carro);
                 if(ruaCimaBaixo.getQtdeCarros() == 0) {
                     simularProximoCarroRuaCimaBaixo();
